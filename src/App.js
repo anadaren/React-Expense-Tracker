@@ -5,16 +5,21 @@ import { Header } from './components/Header';
 import { IncomeExpense } from './components/IncomeExpense';
 import { TransactionList } from './components/TransactionList';
 
+import { GlobalProvider } from './context/GlobalState';
+
 
 function App() {
   return (
-    <div className="App">
+    <GlobalProvider>
       <Header />
-      <Balance />
-      <IncomeExpense />
-      <TransactionList />
-      <AddTransaction />
-    </div>
+      <div className='container'>
+        <Balance />
+        <IncomeExpense />
+        <TransactionList />
+        <AddTransaction />
+      </div>
+      <div className='footer'>Made with &#10084; by Ana</div>
+    </GlobalProvider>
   );
 }
 
