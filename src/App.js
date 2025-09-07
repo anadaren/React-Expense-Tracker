@@ -18,7 +18,7 @@ function App() {
         <TransactionList />
         <AddTransaction />
       </div>
-      <div className='footer'>Made with &#10084; by Ana</div>
+      <div className='footer'>Made with &#10084; by anadaren</div>
     </GlobalProvider>
   );
 }
